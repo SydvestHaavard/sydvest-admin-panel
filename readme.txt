@@ -13,7 +13,7 @@ Sydvest-tema for administrasjonsområdet og innlogging.
 Sydvest-tema for administrasjonsområdet og innlogging.
 
 == Ofte stilte spørsmål ==
-= Kvifor har eg dette innstikket på sida mi? =
+= Kvifor har eg dette innstikket på nettstaden min? =
 
 Dette innstikket er installert på nettstaden din fordi nettstaden er levert av Sydvest AS. Den sørger for at kontaktinformasjon til Sydvest er lett tilgjengelig dersom du treng hjelp med noko på sida.
 
