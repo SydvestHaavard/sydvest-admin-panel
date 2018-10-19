@@ -17,6 +17,10 @@ Sydvest-tema for administrasjonsområdet og innlogging.
 
 Dette innstikket er installert på nettstaden din fordi nettstaden er levert av Sydvest AS. Den sørger for at kontaktinformasjon til Sydvest er lett tilgjengelig dersom du treng hjelp med noko på sida.
 
+= Er noko av dette synleg på nettstaden min? =
+
+Nei. Dette innstikket endrar berre enkelte ting på administrasjonspanelet til nettstaden. Ingenting er synleg utad for dei som besøker nettstaden.
+
 == Endringslogg ==
 = 1.0.0 =
 * Innstikket vart lansert
