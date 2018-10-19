@@ -29,7 +29,7 @@ function register_sv_styles() {
  
 // Change footer text
 function sv_change_footer_text() {
-	echo 'SYDVEST - Kundeservice Kontakt '. SVNAME .' <a href="mailto:'. SVEMAIL .'" title="Send e-post til support">'. SVEMAIL .'</a> - Telefon '. SVPHONE .' <img src="/wp-content/plugins/sydvest-admin-panel/img/SYDVEST_logo_farge.svg" alt="SYDVEST Logo" />';
+	echo 'SYDVEST - Kundeservice Kontakt '. SVNAME .' <a href="mailto:'. SVEMAIL .'" title="Send e-post til support">'. SVEMAIL .'</a> - Telefon '. SVPHONE .' <a href="http://sydvest.no" target="_blank"><img src="/wp-content/plugins/sydvest-admin-panel/img/SYDVEST_logo_farge.svg" alt="SYDVEST Logo" /></a>';
 }
 
 // DASHBOARD REMOVE WIDGETS
