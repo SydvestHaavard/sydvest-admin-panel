@@ -1,17 +1,17 @@
 <?php 
 /**
-Plugin Name: Sydvest Admin Panel
-Plugin URI: http://sydvest.no/
-Description: Sydvest-tema for administrasjonsområdet.
-Based on Oktan Admin 1.0 by Øyvind Eikeland <oyvind.eikeland@oktan.no>. Edited 19.10.2018.
-Version: 1.1.2
-Author: Håvard Hvoslef Kvalnes <haavard@sydvest.no> 
-Author URI: http://sydvest.no/
-License: GPLv2
-Icon1x: /wp-content/plugins/sydvest-admin-panel/img/icon-128x128.png
-Icon2x: /wp-content/plugins/sydvest-admin-panel/img/icon-256x256.png
-BannerHigh: /wp-content/plugins/sydvest-admin-panel/img/banner-1544x500.png
-BannerLow: /wp-content/plugins/sydvest-admin-panel/img/banner-722x250.png
+* Plugin Name: Sydvest Admin Panel
+* Plugin URI: http://sydvest.no/
+* Description: Sydvest-tema for administrasjonsområdet.
+* Based on Oktan Admin 1.0 by Øyvind Eikeland <oyvind.eikeland@oktan.no>. Edited 19.10.2018.
+* Version: 1.1.2
+* Author: Håvard Hvoslef Kvalnes <haavard@sydvest.no> 
+* Author URI: http://sydvest.no/
+* License: GPLv2
+* Icon1x: /wp-content/plugins/sydvest-admin-panel/img/icon-128x128.png
+* Icon2x: /wp-content/plugins/sydvest-admin-panel/img/icon-256x256.png
+* BannerHigh: /wp-content/plugins/sydvest-admin-panel/img/banner-1544x500.png
+* BannerLow: /wp-content/plugins/sydvest-admin-panel/img/banner-722x250.png
  */
 
 // Set some changeable variables, change as needed
