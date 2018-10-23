@@ -2,8 +2,8 @@
 /**
 * Plugin Name: Sydvest Adminpanel
 * Plugin URI: http://sydvest.no/
-* Description: Sydvest-tema for administrasjonsområdet.
-* Version: 1.0.4
+* Description: Sydvest-tema for administrasjonspanelet.
+* Version: 1.0.5
 * Author: Sydvest AS <post@sydvest.no> 
 * Author URI: http://sydvest.no/
 * License: GPLv2
