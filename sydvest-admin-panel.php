@@ -1,17 +1,17 @@
 <?php 
 /**
-* Plugin Name: Sydvest Adminpanel
-* Plugin URI: http://sydvest.no/
-* Description: Sydvest-tema for administrasjonsområdet.
-* Based on Oktan Admin 1.0 by Øyvind Eikeland <oyvind.eikeland@oktan.no>. Edited 19.10.2018 by Håvard Hvoslef Kvalnes <haavard@sydvest.no>.
-* Version: 1.0.1
-* Author: Sydvest AS <post@sydvest.no> 
-* Author URI: http://sydvest.no/
-* License: GPLv2
-* Icon1x: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon-128x128.png
-* Icon2x: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon-256x256.png
-* BannerHigh: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/banner-1544x500.png
-* BannerLow: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/banner-722x250.png
+Plugin Name: Sydvest Adminpanel
+Plugin URI: http://sydvest.no/
+Description: Sydvest-tema for administrasjonsområdet.
+Based on Oktan Admin 1.0 by Øyvind Eikeland <oyvind.eikeland@oktan.no>. Edited 19.10.2018 by Håvard Hvoslef Kvalnes <haavard@sydvest.no>.
+Version: 1.0.2
+Author: Sydvest AS <post@sydvest.no> 
+Author URI: http://sydvest.no/
+License: GPLv2
+Icon1x: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon-128x128.png
+Icon2x: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon-256x256.png
+BannerHigh: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/banner-1544x500.png
+BannerLow: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/banner-722x250.png
  */
 
 // Set some changeable variables, change as needed
@@ -87,7 +87,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once plugin_dir_path( __FILE__ ) . 'lib/wp-package-updater/class-wp-package-updater.php';
 
 /** Enable plugin updates with license check **/
-// $prefix_updater = new WP_Package_Updater(
+// $svadmin_updater = new WP_Package_Updater(
 // 	'https://your-update-server.com',
 // 	wp_normalize_path( __FILE__ ),
 // 	wp_normalize_path( plugin_dir_path( __FILE__ ) ),
@@ -95,7 +95,7 @@ require_once plugin_dir_path( __FILE__ ) . 'lib/wp-package-updater/class-wp-pack
 // );
 
 /** Enable plugin updates without license check **/
-$prefix_updater = new WP_Package_Updater(
+$svadmin_updater = new WP_Package_Updater(
 'http://sydvest.newdev.no/',
 wp_normalize_path( __FILE__ ),
 wp_normalize_path( plugin_dir_path( __FILE__ ) )
