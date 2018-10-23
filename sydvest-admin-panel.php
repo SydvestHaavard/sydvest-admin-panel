@@ -103,8 +103,8 @@ wp_normalize_path( plugin_dir_path( __FILE__ ) )
 
 /* ================================================================================================ */
 
-function dummy_plugin_run() {}
-add_action( 'plugins_loaded', 'dummy_plugin_run', 10, 0 );
+function sydvest_admin_run() {}
+add_action( 'plugins_loaded', 'sydvest_admin_run', 10, 0 );
 
 // Sydvest Admin actions
 add_action( 'login_enqueue_scripts', 'register_sv_styles' ); // Change login logo
