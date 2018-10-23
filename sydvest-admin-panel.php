@@ -6,8 +6,6 @@
 * Version: 1.0.5
 * Author: Sydvest AS <post@sydvest.no> 
 * Author URI: http://sydvest.no/
-* License: GPLv2
-* License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 // Set some changeable variables, change as needed
