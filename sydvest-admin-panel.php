@@ -8,10 +8,10 @@
 * Author: Sydvest AS <post@sydvest.no> 
 * Author URI: http://sydvest.no/
 * License: GPLv2
-* Icon1x: https://github.com/SydvestHaavard/sydvest-admin-panel/blob/master/img/icon-128x128.png
-* Icon2x: https://github.com/SydvestHaavard/sydvest-admin-panel/blob/master/img/icon-256x256.png
-* BannerHigh: https://github.com/SydvestHaavard/sydvest-admin-panel/blob/master/img/banner-1544x500.png
-* BannerLow: https://github.com/SydvestHaavard/sydvest-admin-panel/blob/master/img/banner-722x250.png
+* Icon1x: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon-128x128.png
+* Icon2x: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon-256x256.png
+* BannerHigh: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/banner-1544x500.png
+* BannerLow: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/banner-722x250.png
  */
 
 // Set some changeable variables, change as needed
