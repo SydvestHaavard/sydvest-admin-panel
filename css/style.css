@@ -18,20 +18,25 @@
 
 /* Login Submit buttom */
 .wp-core-ui .button-primary {
+	color:#000;
 	background-color:#8cc63f;
 	border:none;
+	text-shadow: none;
+	box-shadow: 0 1px 0 #000;
 }
 .wp-core-ui .button-primary:hover {
-	background-color:#0055a5;
+	color:#fff;
+	background-color:#598227;
 }
 
 
 /* Links below form */
 .login #nav a, .login #backtoblog a {
-	color:#8cc63f;
+	color:#000;
 }
 .login #nav a:hover, .login #backtoblog a:hover {
-	color:#0055a5;
+	color:#000;
+	text-decoration:underline;
 }
 
 /*	ADMIN FOOTER 
