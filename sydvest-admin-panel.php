@@ -1,12 +1,13 @@
 <?php 
 /**
-Plugin Name: Sydvest Adminpanel
-Plugin URI: http://sydvest.no/
-Description: Sydvest-tema for administrasjonsområdet.
-Version: 1.0.3
-Author: Sydvest AS <post@sydvest.no> 
-Author URI: http://sydvest.no/
-License: GPLv2
+* Plugin Name: Sydvest Adminpanel
+* Plugin URI: http://sydvest.no/
+* Description: Sydvest-tema for administrasjonsområdet.
+* Version: 1.0.4
+* Author: Sydvest AS <post@sydvest.no> 
+* Author URI: http://sydvest.no/
+* License: GPLv2
+* License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 // Set some changeable variables, change as needed
