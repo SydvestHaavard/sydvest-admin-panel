@@ -4,7 +4,7 @@ Plugin Name: Sydvest Adminpanel
 Plugin URI: http://sydvest.no/
 Description: Sydvest-tema for administrasjonsområdet.
 Based on Oktan Admin 1.0 by Øyvind Eikeland <oyvind.eikeland@oktan.no>. Edited 19.10.2018 by Håvard Hvoslef Kvalnes <haavard@sydvest.no>.
-Version: 1.0.2
+Version: 1.0.3
 Author: Sydvest AS <post@sydvest.no> 
 Author URI: http://sydvest.no/
 License: GPLv2
