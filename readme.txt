@@ -22,5 +22,7 @@ Dette innstikket er installert på nettstaden din fordi nettstaden er levert av 
 Nei. Dette innstikket endrar berre enkelte ting på administrasjonspanelet til nettstaden. Ingenting er synleg utad for dei som besøker nettstaden.
 
 == Endringslogg ==
+= 1.1.0 =
+* Fjernar unødvendige innstillings-boksar frå innlegg- og sideredigeringspanelet.
 = 1.0.0 =
 * Innstikket vart lansert
