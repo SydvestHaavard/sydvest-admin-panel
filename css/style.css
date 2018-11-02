@@ -29,6 +29,15 @@
 	background-color:#598227;
 }
 
+.wp-core-ui .button-primary-disabled, .wp-core-ui .button-primary.disabled, .wp-core-ui .button-primary:disabled, .wp-core-ui .button-primary[disabled] {
+    color: #C3E199!important;
+    background: #5C8325!important;
+    border: none!important;
+    box-shadow: none!important;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1)!important;
+    cursor: default;
+}
+
 
 /* Links below form */
 .login #nav a, .login #backtoblog a {
