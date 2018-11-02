@@ -4,7 +4,7 @@
 * Plugin URI: http://sydvest.no/
 * Description: Sydvest-tema for administrasjonspanelet.
 * Based on Oktan Admin 1.0 by Øyvind Eikeland <oyvind.eikeland@oktan.no>. Edited 19.10.2018 by Håvard Hvoslef Kvalnes <haavard@sydvest.no>.
-* Version: 1.1.6
+* Version: 1.1.7
 * Author: Sydvest AS <post@sydvest.no> 
 * Author URI: http://sydvest.no/
 * Icon1x: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon-128x128.png
@@ -65,6 +65,7 @@ function sv_add_welcome_widget(){ ?>
 }
 
 // HIDE POST META BOXES
+add_filter( 'default_hidden_meta_boxes','sv_default_hidden_meta_boxes',10,2 ); // Hide post meta boxes
 function sv_default_hidden_meta_boxes( $hidden, $screen ) {
 	// Grab the current post type
 	$post_type = $screen->post_type;
@@ -138,6 +139,5 @@ add_action( 'wp_dashboard_setup', 'sv_add_dashboard_widgets' ); // add dashboard
 
 // Sydvest Admin filters
 add_filter( 'admin_footer_text', 'sv_change_footer_text' );	// Change footer text filter
-add_filter( 'sv_default_hidden_meta_boxes','hide_meta_box',10,2 ); // Hide post meta boxes
 
 ?>
