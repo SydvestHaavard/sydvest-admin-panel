@@ -64,37 +64,34 @@ function sv_add_welcome_widget(){ ?>
 <?php 
 }
 
-// REMOVE POST META BOXES
-function sv_remove_post_metaboxes() {
-// remove_meta_box( 'authordiv','post','normal' ); // Author Metabox
-remove_meta_box( 'commentstatusdiv','post','normal' ); // Comments Status Metabox
-remove_meta_box( 'commentsdiv','post','normal' ); // Comments Metabox
-remove_meta_box( 'postcustom','post','normal' ); // Custom Fields Metabox
-// remove_meta_box( 'postexcerpt','post','normal' ); // Excerpt Metabox
-remove_meta_box( 'revisionsdiv','post','normal' ); // Revisions Metabox
-remove_meta_box( 'slugdiv','post','normal' ); // Slug Metabox
-remove_meta_box( 'trackbacksdiv','post','normal' ); // Trackback Metabox
-// remove_meta_box( 'categorydiv','post','normal' ); // Categories Metabox
-remove_meta_box( 'formatdiv','post','normal' ); // Formats Metabox
-// remove_meta_box( 'postimagediv','post','normal' ); // Featured Image Metabox
-// remove_meta_box( 'submitdiv','post','normal' ); // Categories Metabox
-remove_meta_box( 'tagsdiv-post_tag','post','normal' ); // Tags Metabox
-}
-
-// REMOVE PAGE META BOXES
-function sv_remove_page_metaboxes() {
-// remove_meta_box( 'authordiv','page','normal' ); // Author Metabox
-remove_meta_box( 'commentstatusdiv','page','normal' ); // Comments Status Metabox
-remove_meta_box( 'postcustom','page','normal' ); // Custom Fields Metabox
-// remove_meta_box( 'postexcerpt','page','normal' ); // Excerpt Metabox
-remove_meta_box( 'revisionsdiv','page','normal' ); // Revisions Metabox
-remove_meta_box( 'slugdiv','page','normal' ); // Slug Metabox
-remove_meta_box( 'trackbacksdiv','page','normal' ); // Trackback Metabox
-// remove_meta_box( 'categorydiv','page','normal' ); // Categories Metabox
-remove_meta_box( 'formatdiv','page','normal' ); // Formats Metabox
-// remove_meta_box( 'postimagediv','page','normal' ); // Featured Image Metabox
-// remove_meta_box( 'submitdiv','page','normal' ); // Categories Metabox
-remove_meta_box( 'tagsdiv-post_tag','page','normal' ); // Tags Metabox
+// HIDE POST META BOXES
+function sv_default_hidden_meta_boxes( $hidden, $screen ) {
+	// Grab the current post type
+	$post_type = $screen->post_type;
+	// If we're on a 'post'...
+	if ( $post_type == 'post' ) {
+		// Define which meta boxes we wish to hide
+		$hidden = array(
+//			'authordiv', // Author Metabox
+			'commentstatusdiv', // Comments Status Metabox
+			'commentsdiv', // Comments Metabox
+			'postcustom', // Custom Fields Metabox
+//			'postexcerpt', // Excerpt Metabox
+			'revisionsdiv', // Revisions Metabox
+			'slugdiv', // Slug Metabox
+			'trackbacksdiv', // Trackback Metabox
+//			'categorydiv', // Categories Metabox
+			'formatdiv', // Formats Metabox
+//			'postimagediv', // Featured Image Metabox
+//			'submitdiv', // Submit Metabox
+			'tagsdiv-post_tag', // Tags Metabox
+		);
+		// Pass our new defaults onto WordPress
+		return $hidden;
+	}
+	// If we are not on a 'post', pass the
+	// original defaults, as defined by WordPress
+	return $hidden;
 }
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -143,8 +140,7 @@ add_action( 'login_enqueue_scripts', 'register_sv_styles' ); // Change login log
 add_action( 'admin_enqueue_scripts', 'register_sv_styles' );	// register stylesheet action
 add_action( 'wp_dashboard_setup', 'sv_remove_dashboard_widgets' ); // remove dashboard action
 add_action( 'wp_dashboard_setup', 'sv_add_dashboard_widgets' ); // add dashboard widgets
-add_action( 'admin_menu','sv_remove_post_metaboxes' ); // remove post metaboxes
-add_action( 'admin_menu','sv_remove_page_metaboxes' ); // remove page metaboxes
+add_action( 'default_hidden_meta_boxes', 'sv_default_hidden_meta_boxes', 10, 2 ); // remove post metaboxes
 
 // Sydvest Admin filters
 add_filter('admin_footer_text', 'sv_change_footer_text');	// Change footer text filter
