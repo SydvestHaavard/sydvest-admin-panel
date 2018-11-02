@@ -72,18 +72,18 @@ function sv_default_hidden_meta_boxes( $hidden, $screen ) {
 	if ( $post_type == 'post' ) {
 		// Define which meta boxes we wish to hide
 		$hidden = array(
-//			'authordiv', // Author Metabox
+			// 'authordiv', // Author Metabox
 			'commentstatusdiv', // Comments Status Metabox
 			'commentsdiv', // Comments Metabox
 			'postcustom', // Custom Fields Metabox
-//			'postexcerpt', // Excerpt Metabox
+			// 'postexcerpt', // Excerpt Metabox
 			'revisionsdiv', // Revisions Metabox
 			'slugdiv', // Slug Metabox
 			'trackbacksdiv', // Trackback Metabox
-//			'categorydiv', // Categories Metabox
+			// 'categorydiv', // Categories Metabox
 			'formatdiv', // Formats Metabox
-//			'postimagediv', // Featured Image Metabox
-//			'submitdiv', // Submit Metabox
+			// 'postimagediv', // Featured Image Metabox
+			// 'submitdiv', // Submit Metabox
 			'tagsdiv-post_tag', // Tags Metabox
 		);
 		// Pass our new defaults onto WordPress
