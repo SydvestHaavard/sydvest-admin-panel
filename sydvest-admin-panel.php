@@ -4,7 +4,7 @@
 * Plugin URI: http://sydvest.no/
 * Description: Sydvest-tema for administrasjonspanelet.
 * Based on Oktan Admin 1.0 by Øyvind Eikeland <oyvind.eikeland@oktan.no>. Edited 19.10.2018 by Håvard Hvoslef Kvalnes <haavard@sydvest.no>.
-* Version: 1.1.12
+* Version: 1.1.13
 * Author: Sydvest AS <post@sydvest.no> 
 * Author URI: http://sydvest.no/
 * Icon: https://raw.github.com/SydvestHaavard/sydvest-admin-panel/master/img/icon.svg
@@ -66,38 +66,10 @@ function sv_add_welcome_widget(){ ?>
 }
 
 // HIDE POST META BOXES
-function set_user_metaboxes($user_id=NULL) {
-    $post_types= array( 'post', 'page', 'link', 'attachment' );
-    // add any custom post types here:
-    // $post_types[]= 'my_custom_post_type';
-    foreach ($post_types as $post_type) {
-
-       // These are the metakeys we will need to update
-       $meta_key= array(
-           'order' => "meta-box-order_$post_type",
-           'hidden' => "metaboxhidden_$post_type",
-       );
-
-       if ( ! $user_id)
-           $user_id = get_current_user_id(); 
-
-       // Set the default order if it has not been set yet
-       if ( ! get_user_option( $meta_key['order'], $user_id ) ) {
-           $meta_value = array(
-               'side' => 'submitdiv,formatdiv,categorydiv,postimagediv',
-               'normal' => 'postexcerpt,tagsdiv-post_tag,postcustom,commentstatusdiv,commentsdiv,trackbacksdiv,slugdiv,authordiv,revisionsdiv',
-               'advanced' => '',
-           );
-           update_user_option( $user_id, $meta_key['order'], $meta_value, true );
-       }
-
-       // Set the default hiddens if it has not been set yet
-       if ( ! get_user_option( $meta_key['hidden'], $user_id ) ) {
-           $meta_value = array('formatdiv','tagsdiv-post_tag','postcustom','trackbacksdiv','commentstatusdiv','commentsdiv','slugdiv','revisionsdiv');
-           update_user_option( $user_id, $meta_key['hidden'], $meta_value, true );
-       }
-    }
- }
+add_filter( 'default_hidden_meta_boxes', 'my_hidden_meta_boxes', 10, 2 );
+function my_hidden_meta_boxes( $hidden, $screen ) {
+    return array( 'formatdiv','tagsdiv-post_tag','postcustom','trackbacksdiv','commentstatusdiv','commentsdiv','slugdiv','revisionsdiv'); // get these from the css class
+}
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
