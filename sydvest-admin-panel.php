@@ -128,7 +128,7 @@ require_once plugin_dir_path( __FILE__ ) . 'lib/wp-package-updater/class-wp-pack
 
 /** Enable plugin updates without license check **/
 $svadmin_updater = new WP_Package_Updater(
-'http://sydvest.newdev.no/',
+'http://plugins.sydvestdev.no/',
 wp_normalize_path( __FILE__ ),
 wp_normalize_path( plugin_dir_path( __FILE__ ) )
 );
